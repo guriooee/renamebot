@@ -45,7 +45,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([
+            reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
         ]])            
