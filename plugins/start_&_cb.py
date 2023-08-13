@@ -15,6 +15,7 @@ async def start(client, message):
         InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),                   
         InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/Anime_Guru_TV')
     ],
+    [
         InlineKeyboardButton("🇮🇳 Oᴡɴᴇʀ", user_id=5557434886)
         ]])
     if Config.START_PIC:
@@ -36,6 +37,7 @@ async def cb_handler(client, query: CallbackQuery):
         InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),                   
         InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/Anime_Guru_TV')
     ],
+    [  
         InlineKeyboardButton("🇮🇳 Oᴡɴᴇʀ", user_id=5557434886)
         ]])
         )
