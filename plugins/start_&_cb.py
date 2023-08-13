@@ -31,7 +31,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True, 
-            reply_markup = InlineKeyboardMarkup([[
+            reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton('🛠️ Hᴇʟᴩ', callback_data='help')],
     [
         InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),                   
@@ -45,19 +45,19 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[
+            reply_markup=InlineKeyboardMarkup([
                 InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
-            ]])            
+            ])            
         )
     elif data == "about":
         await query.message.edit_text(
             text=Txt.ABOUT_TXT.format(client.mention),
-            disable_web_page_preview = True,
-            reply_markup=InlineKeyboardMarkup([[
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([
                 InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
-            ]])            
+            ])            
         )
     elif data == "close":
         try:
